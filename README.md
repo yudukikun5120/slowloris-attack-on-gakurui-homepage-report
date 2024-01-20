@@ -9,7 +9,7 @@
 
 ## 対象とする学類およびホスト
 
-以下の学類のホームページを対象としています[^1]（CSV 形式での一覧は [こちら](./gakurui_url.csv)）。
+以下の学類のホームページを対象としています[^1]（CSV 形式での一覧は [gakurui_list.csv](./gakurui_list.csv)）。
 
 [^1]: 2024年1月20日閲覧
 
@@ -58,16 +58,16 @@ Gokberk Yaltirakli 氏によって開発された pip パッケージ [Slowloris
 | `--https` | 攻撃対象の URL が HTTPS であることを指定 (対象ホームページがSSL対応していない場合は本オプションを省略) |
 | `"$host"` | 攻撃対象の URL |
 
-## 実行手順
+### 実行手順
 
 シェルスクリプト [slowloris_attack.sh](./slowloris_attack.sh) を実行し、Slowloris DDoS 攻撃を実施しました。
-このスクリプトは、CSVファイル [gakurui_url.csv](./gakurui_url.csv) から学類ウェブサイトのURLを読み取り、curlとslowlorisツールを使用して攻撃を実施し、その結果をファイルに書き込むものです。以下はスクリプトの主な構造と機能の説明です。
+このスクリプトは、CSVファイル [gakurui_list.csv](./gakurui_list.csv) から学類ウェブサイトのURLを読み取り、curlとslowlorisツールを使用して攻撃を実施し、その結果をファイルに書き込むものです。以下はスクリプトの主な構造と機能の説明です。
 
 1. **オプション解析:**
    - スクリプトは `-s` オプションで`sockets_num`（slowlorisのソケットの数）を受け入れます。
 
 2. **入力ファイルと出力ファイルの設定:**
-   - `input_file` には学類やURLが含まれたCSVファイル（`gakurui_url.csv`）が指定されています。
+   - `input_file` には学類やURLが含まれたCSVファイル（`gakurui_list.csv`）が指定されています。
    - `output_file` には攻撃結果が書き込まれる出力ファイルの名前が指定されています。オプションで指定されたソケット数を含むファイル名になります。
 
 3. **ヘッダーの書き込み:**
