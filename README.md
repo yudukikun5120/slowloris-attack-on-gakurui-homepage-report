@@ -15,7 +15,7 @@
 
 | URL | 学類名 | 学群名 |
 | -- | -- | --- |
-| [https://scs.tsukuba.ac.jp/](https://scs.tsukuba.ac.jp/) | 総合学域群| (総合学域群)|
+| [https://scs.tsukuba.ac.jp/](https://scs.tsukuba.ac.jp/) | （総合学域群）| 総合学域群|
 | [https://www.jinbun.tsukuba.ac.jp/](https://www.jinbun.tsukuba.ac.jp/) | 人文学類| 人文・文化学群|
 | [http://www.hibun.tsukuba.ac.jp/](http://www.hibun.tsukuba.ac.jp/) | 比較文化学類| 人文・文化学群|
 | [http://www.japanese.tsukuba.ac.jp/](http://www.japanese.tsukuba.ac.jp/) | 日本語・日本文化学類| 人文・文化学群|
