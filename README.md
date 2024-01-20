@@ -2,10 +2,10 @@
 
 ## はじめに
 
-本レポジトリは、国立大学法人筑波大学の各学類のホームページに対し試験的に実施した Slowloris DDoS 攻撃を結果をまとめたものです。
+本レポジトリは、国立大学法人筑波大学の各学類のホームページに対し試験的に実施した Slowloris DoS 攻撃を結果をまとめたものです。
 
 > [!WARNING]
-> 本レポジトリは学類ホームページの脆弱性を調査することを目的としており、いかなる DDoS 攻撃も教唆するものではありません。
+> 本レポジトリは学類ホームページの脆弱性を調査することを目的としており、いかなる DoS 攻撃も教唆するものではありません。
 
 ## 対象とする学類およびホスト
 
@@ -42,9 +42,9 @@
 | [https://www.md.tsukuba.ac.jp/med-sciences/](https://www.md.tsukuba.ac.jp/med-sciences/) | 医療科学類| 医学群|
 
 
-## Slowloris DDoS 攻撃の実施
+## Slowloris DoS 攻撃の実施
 
-Gokberk Yaltirakli 氏によって開発された pip パッケージ [Slowloris](https://pypi.org/project/Slowloris/) を用いて、Slowloris DDoS 攻撃を実施しました。
+Gokberk Yaltirakli 氏によって開発された pip パッケージ [Slowloris](https://pypi.org/project/Slowloris/) を用いて、Slowloris DoS 攻撃を実施しました。
 
 ### オプション
 
@@ -60,7 +60,7 @@ Gokberk Yaltirakli 氏によって開発された pip パッケージ [Slowloris
 
 ### 実行手順
 
-シェルスクリプト [slowloris_attack.sh](./slowloris_attack.sh) を実行し、Slowloris DDoS 攻撃を実施しました。
+シェルスクリプト [slowloris_attack.sh](./slowloris_attack.sh) を実行し、Slowloris DoS 攻撃を実施しました。
 このスクリプトは、CSVファイル [gakurui_list.csv](./gakurui_list.csv) から学類ウェブサイトのURLを読み取り、curlとslowlorisツールを使用して攻撃を実施し、その結果をファイルに書き込むものです。以下はスクリプトの主な構造と機能の説明です。
 
 1. **オプション解析:**
